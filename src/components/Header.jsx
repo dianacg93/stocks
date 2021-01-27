@@ -2,8 +2,8 @@ import '../App.css'
 
 const Header = () => {
     return(
-        <div>
-            <h1>Stocks</h1>
+        <div className="stock-header" >
+            <h1>STOCKS</h1>
         </div>
     )
 }

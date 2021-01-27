@@ -24,13 +24,27 @@ const Stocks = () => {
         getMyStocks()
     }, [])
 
+    const handleChange = (e) => {
+        setInput(e.target.value);
+    }
+
+    const searchStock = async (e) => {
+        e.preventDefault();
+        const res = await GetStock(input);
+        setResult(res);
+        e.target.value = ""
+    }
+
     return (
         <div>
             {stock.map((stock, i) => {
                 return <Stock stock = {stock} i ={i} />
             })}
-            <Search/>
-            <Results/>
+            <Search 
+                handleChange = {(e) => handleChange(e)}
+                searchStock = {(e) => searchStock(e)}
+            />
+            <Results res={result}/>
         </div>
     )
 }

@@ -4,3 +4,64 @@
   color: #fefeff;
 }
 
+.stock-header{
+  background-color: #29272B;
+  margin: 0;
+}
+
+.stock-container {
+  border: solid 1px #2F2F2F;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.negative {
+  background-color: #F7826C;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.positive {
+  background-color: #5f9c64;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.stock-search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.stock-search{
+  width: 75vw;
+  height: 30px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  background-color: #29272B;
+  padding: 0 20px;
+}
+
+.stock-search::placeholder {
+  color: #e5e5e7;
+}
+
+.stock-search:focus{
+  outline: none;
+}
+
+button {
+  background-color: #525153;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+button:focus{
+  outline: none;
+}
